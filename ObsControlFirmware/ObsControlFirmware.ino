@@ -1,5 +1,5 @@
 /* 
- * OBS STUDIO CONTROL RIG version 1.5 (2021-01-14)
+ * OBS STUDIO CONTROL RIG version 2.0 (2021-01-18)
  * 
  * Copyright (c) Michal Altair Valasek, 2019-2021
  * Licensed under terms of the MIT License.
