@@ -20,3 +20,26 @@ Switch to scene "Brand loop 1"    | Ctrl+Alt+Shift+F4
 Switch to scene "Brand loop 2"    | Ctrl+Alt+Shift+F5
 Start/stop recording              | Ctrl+Alt+Shift+F6
 Start/stop streaming              | Ctrl+Alt+Shift+F7
+
+## Hardware connection
+
+For _Pro Micro_ board I recommend to solder pins upside down (so they stick out of component side) so the flat board side can be hotglued to the box.
+
+PIN | Connect
+--- | -------
+D2  | Red button
+D3  | Blue button
+D4  | Black  button
+D5  | Yellow button
+D6  | Green  button
+D7  | Square green button (stream)
+D8  | Square red button (record)
+D14 | Square red LED (record)
+D15 | Square green LED (stream)
+GND | Common ground (buttons & LEDs)
+
+## Example wiring
+
+![Photo](wiring.jpg)
+
+MK1 from bottom side.
