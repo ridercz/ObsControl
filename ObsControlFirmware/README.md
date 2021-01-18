@@ -4,7 +4,7 @@ This is sketch for Arduino Pro Micro or other ATmega32u4-based Arduino board. It
 
 It recognizes two types of buttons:
 
-1. _Standard buttons_, which simply send the keystroke to computer. I use them for switching scenes 1-5.
+1. _Standard buttons_, which simply send the keystroke to computer. I use them for switching scenes 1-5. Their state can be indicated with optional RGB LED (I use APA106, but any neopixel-style LED can be used).
 2. _Status buttons_, which toggle states and can turn on/off LEDs. I use the backlighted buttons for stream and record control. Again they send keystrokes to computer. The status management is done only in controller, no backwards communication occurs.
 
 As a keystroke I use _Ctrl+Alt+Shift+F1_ for first standard button, _Ctrl+Alt+Shift+F2_ for second etc. The status button follows.
@@ -36,10 +36,12 @@ D7  | Square green button (stream)
 D8  | Square red button (record)
 D14 | Square red LED (record)
 D15 | Square green LED (stream)
+D16 | RGB LED Data in
+VCC | RGB LED power
 GND | Common ground (buttons & LEDs)
 
 ## Example wiring
 
 ![Photo](wiring.jpg)
 
-MK1 from bottom side.
+MK1 from bottom side. Does not include the RGB LED.
